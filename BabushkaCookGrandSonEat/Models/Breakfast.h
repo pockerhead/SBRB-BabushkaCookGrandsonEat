@@ -10,9 +10,9 @@
 #import "ServeProtocol.h"
 
 typedef NS_ENUM(NSUInteger, BreakfastType) {
-    Yaichica,
-    Tosty,
-    Blinchiki,
+    Yaichica = 0,
+    Tosty = 1,
+    Blinchiki = 2,
 };
 
 NS_ASSUME_NONNULL_BEGIN

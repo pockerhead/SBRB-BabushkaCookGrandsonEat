@@ -14,10 +14,6 @@
 
 @implementation Granny
 
-- (void)serveDinnerWithType:(DinnerType)type {
-    NSLog(@"%@", [NSString stringWithFormat:@"Start serve dinner with type: %lu", (unsigned long)type]);
-}
-
 - (nullable id<ServeProtocol>)serveMealWithDate:(NSDate *)date {
     id<ServeProtocol> meal = nil;
     NSCalendar *calendar = [NSCalendar currentCalendar];

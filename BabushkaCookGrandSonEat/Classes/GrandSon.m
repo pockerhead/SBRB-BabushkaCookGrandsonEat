@@ -23,46 +23,34 @@
     
     if([serve isKindOfClass:[Lunch class]]) {
         Lunch *meal = serve;
-        switch (meal.type) {
-            case Borsh:
-                condition = YES;
-                break;
-            case SupPure:
-                condition = YES;
-            case Svekolink:
-                condition = NO;
-            default:
-                break;
+        if (meal.type == Borsh) {
+            condition = YES;
+        } else if (meal.type == Svekolink) {
+            condition = YES;
+        } else if (meal.type == SupPure) {
+            condition = NO;
         }
     }
     
     if([serve isKindOfClass:[Dinner class]]) {
         Dinner *meal = serve;
-        switch (meal.type) {
-            case KotletkiPureshka:
-                condition = YES;
-                break;
-            case Lasanya:
-                condition = YES;
-            case KuraGrechya:
-                condition = NO;
-            default:
-                break;
+        if (meal.type == Lasanya) {
+            condition = YES;
+        } else if (meal.type == KotletkiPureshka) {
+            condition = YES;
+        } else if (meal.type == KuraGrechya) {
+            condition = NO;
         }
     }
     
     if([serve isKindOfClass:[Breakfast class]]) {
         Breakfast *meal = serve;
-        switch (meal.type) {
-            case Yaichica:
-                condition = YES;
-                break;
-            case Tosty:
-                condition = YES;
-            case Blinchiki:
-                condition = NO;
-            default:
-                break;
+        if (meal.type == Blinchiki) {
+            condition = YES;
+        } else if (meal.type == Yaichica) {
+            condition = YES;
+        } else if (meal.type == Tosty) {
+            condition = NO;
         }
     }
     

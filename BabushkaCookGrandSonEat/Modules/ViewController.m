@@ -22,9 +22,8 @@
     Granny *granny = [Granny new];
     GrandSon *delegate = [GrandSon new];
     granny.delegate = delegate;
-    
+
     [granny serveMealWithDate:[NSDate new]];
 }
-
 
 @end

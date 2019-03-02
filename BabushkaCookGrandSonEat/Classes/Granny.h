@@ -13,7 +13,7 @@
 
 @interface Granny : NSObject 
 
-@property id<EatingProtocol> delegate;
+@property (weak) id<EatingProtocol> delegate;
 
 - (id<ServeProtocol>)serveMealWithDate:(NSDate *)date;
 
