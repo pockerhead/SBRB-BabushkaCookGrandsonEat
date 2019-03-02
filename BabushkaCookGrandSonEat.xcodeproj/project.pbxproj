@@ -13,6 +13,11 @@
 		06047299222836650072F242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06047298222836650072F242 /* Assets.xcassets */; };
 		0604729C222836650072F242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0604729A222836650072F242 /* LaunchScreen.storyboard */; };
 		0604729F222836650072F242 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0604729E222836650072F242 /* main.m */; };
+		060472A8222837A90072F242 /* Granny.m in Sources */ = {isa = PBXBuildFile; fileRef = 060472A7222837A90072F242 /* Granny.m */; };
+		060472AB222838680072F242 /* GrandSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 060472AA222838680072F242 /* GrandSon.m */; };
+		060472B022286B900072F242 /* Dinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 060472AF22286B900072F242 /* Dinner.m */; };
+		060472B322286BA60072F242 /* Lunch.m in Sources */ = {isa = PBXBuildFile; fileRef = 060472B222286BA60072F242 /* Lunch.m */; };
+		060472B622286BB10072F242 /* Breakfast.m in Sources */ = {isa = PBXBuildFile; fileRef = 060472B522286BB10072F242 /* Breakfast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,18 @@
 		0604729B222836650072F242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0604729D222836650072F242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0604729E222836650072F242 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		060472A62228376D0072F242 /* Granny.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Granny.h; sourceTree = "<group>"; };
+		060472A7222837A90072F242 /* Granny.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Granny.m; sourceTree = "<group>"; };
+		060472A9222838680072F242 /* GrandSon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrandSon.h; sourceTree = "<group>"; };
+		060472AA222838680072F242 /* GrandSon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrandSon.m; sourceTree = "<group>"; };
+		060472AC222838790072F242 /* EatingProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EatingProtocol.h; sourceTree = "<group>"; };
+		060472AE22286B900072F242 /* Dinner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dinner.h; sourceTree = "<group>"; };
+		060472AF22286B900072F242 /* Dinner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dinner.m; sourceTree = "<group>"; };
+		060472B122286BA60072F242 /* Lunch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lunch.h; sourceTree = "<group>"; };
+		060472B222286BA60072F242 /* Lunch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lunch.m; sourceTree = "<group>"; };
+		060472B422286BB10072F242 /* Breakfast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Breakfast.h; sourceTree = "<group>"; };
+		060472B522286BB10072F242 /* Breakfast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Breakfast.m; sourceTree = "<group>"; };
+		060472B722286C130072F242 /* ServeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServeProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +75,12 @@
 		0604728E222836630072F242 /* BabushkaCookGrandSonEat */ = {
 			isa = PBXGroup;
 			children = (
+				06C09F5E222A6C96000D21B7 /* Modules */,
+				06C09F5D222A6C88000D21B7 /* Protocols */,
+				06C09F5C222A6C73000D21B7 /* Classes */,
+				06C09F5B222A6C5B000D21B7 /* Models */,
 				0604728F222836630072F242 /* AppDelegate.h */,
 				06047290222836630072F242 /* AppDelegate.m */,
-				06047292222836630072F242 /* ViewController.h */,
-				06047293222836630072F242 /* ViewController.m */,
 				06047295222836630072F242 /* Main.storyboard */,
 				06047298222836650072F242 /* Assets.xcassets */,
 				0604729A222836650072F242 /* LaunchScreen.storyboard */,
@@ -69,6 +88,48 @@
 				0604729E222836650072F242 /* main.m */,
 			);
 			path = BabushkaCookGrandSonEat;
+			sourceTree = "<group>";
+		};
+		06C09F5B222A6C5B000D21B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				060472AE22286B900072F242 /* Dinner.h */,
+				060472AF22286B900072F242 /* Dinner.m */,
+				060472B122286BA60072F242 /* Lunch.h */,
+				060472B222286BA60072F242 /* Lunch.m */,
+				060472B422286BB10072F242 /* Breakfast.h */,
+				060472B522286BB10072F242 /* Breakfast.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		06C09F5C222A6C73000D21B7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				060472A62228376D0072F242 /* Granny.h */,
+				060472A7222837A90072F242 /* Granny.m */,
+				060472A9222838680072F242 /* GrandSon.h */,
+				060472AA222838680072F242 /* GrandSon.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		06C09F5D222A6C88000D21B7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				060472AC222838790072F242 /* EatingProtocol.h */,
+				060472B722286C130072F242 /* ServeProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		06C09F5E222A6C96000D21B7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				06047292222836630072F242 /* ViewController.h */,
+				06047293222836630072F242 /* ViewController.m */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +203,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				06047294222836630072F242 /* ViewController.m in Sources */,
+				060472B622286BB10072F242 /* Breakfast.m in Sources */,
+				060472B022286B900072F242 /* Dinner.m in Sources */,
 				0604729F222836650072F242 /* main.m in Sources */,
+				060472B322286BA60072F242 /* Lunch.m in Sources */,
+				060472A8222837A90072F242 /* Granny.m in Sources */,
 				06047291222836630072F242 /* AppDelegate.m in Sources */,
+				060472AB222838680072F242 /* GrandSon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

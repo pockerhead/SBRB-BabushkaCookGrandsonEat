@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Granny.h"
+#import "GrandSon.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    Granny *granny = [Granny new];
+    GrandSon *delegate = [GrandSon new];
+    granny.delegate = delegate;
+    
+    [granny serveMealWithDate:[NSDate new]];
 }
 
 
